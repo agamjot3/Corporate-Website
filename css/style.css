@@ -1,0 +1,47 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&family=Shadows+Into+Light&display=swap');
+
+
+*{
+    margin: 0;
+    padding:0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Shadows Into Light', cursive;
+}
+p{
+    margin: 1rem 0;
+}
+.text-primary{
+    color: #93cb52;
+}
+#navbar{
+    background: rgb(79, 28, 10);
+    color: #f4f4f4;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    padding: 1rem;
+}
+#navbar ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+#navbar ul li a{
+    color: #f4f4f4;
+    padding: 1rem;
+    margin: 0 0.30rem;
+}
+#navbar ul li a:hover{
+  
+   border-top: 5px solid orange;
+   border-bottom: 5px solid orange;
+   border-radius: 50px;
+
+}
+
