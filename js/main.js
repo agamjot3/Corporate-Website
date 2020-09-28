@@ -1,11 +1,14 @@
-function initMap(){
-    const loc = {
-        lat : 40.058323 , lng: -74.405663;
+$('#navbar a, .btn').on('click', function(event){
+    if (this.hash !== ''){
+        event.preventDefault();
+
+        const hash = this.hash;
+
+        $('html, body').animate(
+            {
+                scrollTop: $(hash).offset().top -100
+            },
+            800
+        );
     }
-    map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: -34.397, lng: 150.644},
-        zoom: 8
-      });
-    );
-    const marker = new google.maps.Marker({position:loc,map:map});
-}
+});
