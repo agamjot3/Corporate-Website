@@ -10,22 +10,114 @@
 }
 body{
     font-family: 'Shadows Into Light', cursive;
+    line-height: 1.5;
+}
+.container{
+    max-width: 1500px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+.text-center{
+    text-align: center;
+}
+.medium-heading{
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+    line-height: 1.2;
+}
+.py-1{
+      padding: 1.5rem 0;
+}
+.py-2{
+    padding: 2rem 0;
+}
+.py-3{
+    padding: 3rem 0;
+}
+.p-1{
+    padding: 1.5rem ;
+}
+.p-2{
+  padding: 2rem ;
+}
+.p-3{
+  padding: 3rem ;
 }
 p{
     margin: 1rem 0;
 }
+.list{
+    margin: 0.5rem 0.5rem;
+    list-style: square;
+}
+.list li{
+    padding: 0.6rem;
+    border-bottom: #444 dotted 2px;
+}
+.large-heading{
+    font-size: 4rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.2;
+}
+.lead{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+.btn{
+    display: inline-block;
+    color: #f4f4f4;
+    background: #93cb52;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 50px;
+    
+}
+.btn:hover{
+    
+    background: #7ab436;
+}
+.btn-dark{
+    background: #333;
+    color: #f4f4f4;
+}
+.bg-light{
+    background: #f4f4f4;
+    color: #3b2727;
+}
+.bg-dark{
+    background: #3b2727;
+    color: #f4f4f4;
+}
+.btn-align{
+    text-align: center;
+}
+.clr{
+    clear: both;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+
+#navbar{
+    background: #3b2727;
+    color: #f4f4f4;
+   
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    padding: 1rem;
+}
+
 .text-primary{
     color: #93cb52;
 }
-#navbar{
-    background: rgb(79, 28, 10);
+.text-secondary{
     color: #f4f4f4;
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    z-index: 1;
-    padding: 1rem;
 }
 #navbar ul{
     display: flex;
@@ -44,4 +136,104 @@ p{
    border-radius: 50px;
 
 }
+#showcase{
+    background: #ae0303 url(../img/empire_state_building_new_york_united_states_skyscrapers_buildings_117963_3840x2160.jpg) no-repeat center center/cover;
+    height: 100vh;
+    color: #f4f4f4;
+}
+#showcase .showcase-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+    font-weight: 300;
+    position: absolute;
+    margin-right: 1rem;
+    top: 100px;
+    left: 0;
+    bottom: 0;
+    right: 0px;
+    background-color: rgba(0,0,0,0.6);
+    width: 100%;
+}
+#what{
+    background: cyan;
+}
 
+ .items{
+     display: flex;
+     padding: 0 2rem;
+    
+ }
+.items .item{
+    text-align: center;
+    flex: 1;
+    justify-content: space-around;
+    padding: 0 1rem;
+    padding-top: 2rem;
+}
+ .item i{
+     background: #93cb52;
+     padding: 1rem 1rem;
+     border-radius: 50%;
+     margin-bottom: 0.75rem;
+ }
+ #who{
+     display: flex;
+ }
+ #who div{
+     flex: 1;
+ }
+ #who .who-img{
+     background: url(https://miro.medium.com/max/6928/1*rR2dDd359WW94NP4pSM9NA.jpeg) no-repeat center center/cover;
+
+ }
+ #clients .client-logo{
+     display: flex;
+ }
+ #clients .client-logo img{
+     display: block;
+     margin: auto;
+     width: 40%;
+ }
+
+ #contact{
+     
+    background: #333;
+     color: #f4f4f4;
+     
+ }
+
+ #contact .contact-form{
+     float: left;
+     background: #3b2727;
+ }
+
+ #contact .contact-form .form-group{
+                  margin: 0.75rem;
+ }
+ #contact .form-group label{
+     display: block;
+ }
+ #contact .form-group input,
+ #contact .form-group textarea{
+     width: 100%;
+     padding: 0.6rem;
+ }
+ #contact .form-group submit{
+     text-align: center;
+ }
+
+ #navbar{
+     position: sticky;
+     top: 0;
+ }
+ .sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
